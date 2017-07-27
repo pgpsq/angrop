@@ -111,9 +111,13 @@ class RopChain(object):
         if self._p.arch.bits == 32:
             pack = "p32(%#x)"
             pack_rebase = "p32(%#x + base_addr)"
-        else:
+        elif self._p.arch.bits == 64:
             pack = "p64(%#x)"
             pack_rebase = "p64(%#x + base_addr)"
+        elif:
+            self._p.arch.bits == 27:
+            pack = "p27(%#x)"
+            pack_rebase = "p27(%#x + base_addr)"
 
         if self._pie:
             payload = "base_addr = 0x0\n"

@@ -195,7 +195,7 @@ class ROP(Analysis):
     def set_badbytes(self, badbytes):
         """
         Define badbytes which should not appear in the generated ropchain.
-        :param badbytes: a list of 8 bit integers
+        :param badbytes: a list of integers representing bytes
         """
         if not isinstance(badbytes, list):
             print "Require a list, e.g: [0x00, 0x09]"
