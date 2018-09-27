@@ -3,13 +3,14 @@ from distutils.core import setup
 
 setup(
     name='angrop',
-    version='7.8.8.1',
+    version='7.8.9.26',
+    python_requires='<3.0',
     description='The rop chain builder based off of angr',
     packages=['angrop'],
     install_requires=[
-        'progressbar',
-        'angr>=7.8.8.1',
-        'pyvex>=7.8.8.1',
-        'claripy>=7.8.8.1',
+        'progressbar==2.3',
+        'angr==7.8.9.26',
+        'pyvex==7.8.9.26',
+        'claripy==7.8.9.26',
     ],
 )

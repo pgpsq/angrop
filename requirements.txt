@@ -1,4 +1,4 @@
-progressbar
-pyvex>=7.8.8.1
-claripy>=7.8.8.1
-angr>=7.8.8.1
+progressbar==2.3
+pyvex==7.8.9.26
+claripy==7.8.9.26
+angr==7.8.9.26
