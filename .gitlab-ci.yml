@@ -9,6 +9,7 @@ angrop:
 lint:
     script: "angr-test lint"
     tags: [angr]
+    tags: [angr]
 
 ### first level
 rex:
